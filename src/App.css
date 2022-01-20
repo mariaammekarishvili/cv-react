@@ -1,38 +1,254 @@
-.App {
-  text-align: center;
+.navbar{
+    height: 90px;
+    display: flex;
+    align-content: center !important;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+    display: flex;
 }
+.navbar--item {
+    font-family: FiraGO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'case' on;
+    margin: auto 12px;
+    color: #292929;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row>div{
+    width: 345px;
 }
-
-.App-link {
-  color: #61dafb;
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+.pok-list>div{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.navbar--item:hover{
+    color: #fa2154;
+}
+.page{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 250px;
+}
+.poster {
+    padding-top: 30px;
+    flex-direction: column;
+    background: linear-gradient(#ffffff, rgba(254, 1, 126, 0.6));
+    display: flex;
+    align-items: center;
+    height: 350px;
+    width: 50%;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.poster:hover {
+    background-color: #0d0dc5;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+.poster h1{
+    font-family: FiraGO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'case' on;
+    margin-bottom: 20px;
+}
+.poster p{
+    font-family: FiraGO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'case' on;
+    margin-bottom: 0px;
+    max-width: 70%;
+    word-break: break-word;
+    justify-content: center;
+}
+.poster span{
+    font-family: FiraGO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    color: #efebeb;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ic-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.ic-box svg{
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+}
+a{
+    text-decoration: none;
+}
+.poster h2,.title,.name{
+    font-family: FiraGO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'case' on;
+}
+.poster *{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.about-pg{
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 30px;
+    margin-top: 150px;
+}
+.name{
+    font-size: 28px;
+}
+.education{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.education>div{
+    width: 345px;
+    margin: 20px;
+}
+.education button{
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+.person{
+    display: flex;
+    flex-wrap: wrap;
+}
+.person img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    object-fit: cover;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+.info{
+    margin-left: 150px;
+}
+.gr,.bl,.contact>a{
+    font-family: FiraGO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    font-feature-settings: 'case' on;
+    margin: auto 12px;
+    color: #464646;
+}
+.bl{
+    color: black;
+    text-align: right;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: -60px;
+    flex-wrap: wrap;
+}
+.contact>a{
+    font-size: 27px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #060680;
+    margin: 10px 30px;
+}
+.contact>a:hover{
+    color: #0b0bc2;
+}
+.g-link{
+    text-decoration: underline;
+    color: deeppink;
+    display: flex;
+    font-size: 24px;
+    margin: 5px 0 10px 0;
+    width: 100%;
+    justify-content: center;
+}
+.g-link:last-child {
+    color: purple;
+}
+.g-link:nth-child(2) {
+    color: chartreuse;
+}
+.g-link:nth-child(3){
+    color: goldenrod;
+}
+.prt>.title{
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+.prt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.prt>.title:last-child{
+    font-size: 24px;
 }

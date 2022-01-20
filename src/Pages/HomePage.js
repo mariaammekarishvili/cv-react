@@ -1,7 +1,8 @@
+import {Link} from 'react-router-dom';
 
 const HomePage = () => {
     return(
-        <>
+        <Link to='/about'>
             <div className={'page'}>
                 <div className={'poster'}>
                     <h1>მოგესალმებით !</h1>
@@ -10,7 +11,7 @@ const HomePage = () => {
                 <h2>წარმატებებს გისურვებთ!</h2>
                 </div>
             </div>
-        </>
+        </Link>
     )
 }
 
